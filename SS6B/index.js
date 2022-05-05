@@ -58,3 +58,6 @@ let a = 5
 a = a + 5 
 
 console.log(a)
+
+
+// Tôi mới thêm dòng này vào file js 
