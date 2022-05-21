@@ -36,7 +36,7 @@ Cơ chế xử lí bất đồng bộ: callback, Promise async/await
 
 git init/git clone -> Chỉ làm 1 lần duy nhất để nói cho máy tính biết sau này push lên đâu 
 
-git pull
+git pull = git fetch + git merge 
 -> Lấy code mới nhất trên github về máy rồi mới code
 
 // push code 
@@ -47,4 +47,4 @@ git push
 -> Đẩy lên github khi chắc chắn k có lỗi 
 
 
-Tiếp tục giải thích về github 
+Tiếp tục giải thích
