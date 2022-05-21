@@ -47,4 +47,3 @@ git push
 -> Đẩy lên github khi chắc chắn k có lỗi 
 
 
-Tiếp tục giải thích về github 
