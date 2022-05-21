@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Khai báo hàm
+        
+        // regular function 
+        function nameFunction(params1,params2) {
+            // Xử lí 1 công việc gì đó 
+        }
+
+        // arrow function 
+        // const nameFunction = (params1,params2) => {
+        //     // Xử lí 1 công việc gì đó 
+        // }
+        
+        // //  immediate function (IIEF): Khai báo và sử dụng ngay lập tức 
+        // (function nameFunction(params1,params2) {
+
+        // })()
+
+
+        // anonymous function - callback -> hàm chỉ thực thi khi công việc trước đã hoàn thành  
+        // Tham số của hàm A là hàm B thì B gọi là callback 
+        // function A(B) {
+        //     B là callback nếu B là 1 function 
+        // } 
+
+
+        // Đệ quy: fibona 
+        // function fibonacci(n) {
+        //     if(n == 1 || n == 2) return 1 
+        //     if(n > 2) {
+        //         return fibonacci(n - 1) + fibonacci(n - 2)
+        //     }
+        // }
+        // console.log(fibonacci(5))
+
+
+
+        // setTimeout(() => {
+        //    // Đoạn code tính toán mất khoảng 20s 
+        // },0)
+
+        // console.log("hello my friend")
+
+
+
+        // setInterval(() => {
+        //     console.log("Interval")
+        // },0)
+        // let a 
+        // setTimeout(() => {
+        //     a = 5             
+        // },1000)
+
+        // let b = a + 5  // Công việc B phụ thuộc công việc A 
+
+        // console.log(b)
+
+        let user = {
+            name: "Long",
+            logger: function() {
+                console.log(this.name)
+            }
+        }
+
+        let admin = {
+            name:"admin"
+        }
+        
+        // user.logger()
+       user.logger.bind(admin)()
+        // Lời gọi hàm để sử dụng 
+        // nameFunction()
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let userHeight = prompt("Please enter your height (m)", "1.5");
+        // let userWeight = prompt("Please enter your weight (kg)", "60")
+        // let bodyMassIdex = userWeight / (userHeight * 2);
+
+
+        // if (bodyMassIdex <= 18.5) {
+        //     console.log("Gầy")
+        // } else if (bodyMassIdex >= 18 && bodyMassIdex <= 24.9) {
+        //     console.log("Bình thường 2")
+        // }
+        // else if (bodyMassIdex >= 24.9 && bodyMassIdex <= 29.9) {
+        //     console.log("Bình thường 1")
+        // } else if (bodyMassIdex >= 30 && bodyMassIdex <= 34.9) {
+        //     console.log("Béo phì độ 1")
+        // } else if (bodyMassIdex >= 35 && bodyMassIdex <= 39.9) {
+        //     console.log("Béo phì độ 2")
+        // } else if (bodyMassIdex > 39.9) { // > 39.9 
+        //     console.log("Béo phì độ 3");
+        // }else {
+        //     console.log("Một số thứ bị sai")
+        // }
+
+        // if() {
+        //     if() {
+
+        //     }
+        // }
+
+        // let a = 5
+        // switch(a) {
+        //     case 5: 
+        //         console.log("a = 5")
+        //         break 
+        //     case 6: 
+        //         console.log("a = 6")
+        //         break 
+        //     default:
+        //         console.log("Trường hợp mặc định")
+        //         break 
+        // }
+
+        // let a = 5 < 0 ? "Số 5 lớn hơn 0" : "Số 5 nhỏ hơn 0" 
+        // console.log(a)
+        // !true = false
+        // let username = prompt("Enter your name")
+        // if (username) {
+        //     console.log(username)
+        // }
+
+        // if(5 != 6) {
+        //     console.log("Hello")
+        // }
+
+        // if(5 === "5") {
+        //     console.log("Hi")
+        // }
+
+
+        for(let i = 0; i < 5;i++) {
+            if(i == 2) {
+                // Thoát vòng lặp bất kể đang ở đâu
+                break 
+            }
+            console.log(i)
+        }
+
+        console.log("----------------")
+
+        for(let i = 0; i < 5;i++) {
+            if(i == 2 || i == 3) {
+                // Bỏ qua code bên dưới ở 1 giá trị xác định
+                continue
+            }
+            console.log(i)
+        }
+
+        
+
+        /*
+        i = 1 
+        i < 5 ? 
+            true: console.log(i) , i++
+            false: Dừng
+
+        i = 2
+        i 5 ? 
+            true: console.log(i) , i++
+            false: Dừng
+
+        i = 3 ....
+
+
+        i = 5 
+        i < 5 ? -> false -> dừng 
+        */
+    </script>
+</body>
+
+</html>

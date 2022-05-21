@@ -63,3 +63,11 @@ console.log(a)
 // Tôi mới thêm dòng này vào file js 
 
 // Tôi code tiếp đây 
+
+
+let c = document.getElementById("container")
+
+
+container.addEventListener("click",() => {
+    c.innerText = "Đã được bấm"
+})

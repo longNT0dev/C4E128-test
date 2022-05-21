@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello here is content</h1>
+
+    <script>
+        // Bài 1 
+        // [c,a,b,d]         [d,c,a,b]
+
+        // a b -> a b c d     c a -> c a d b    b d -> b d a c 
+        // c d                d b               a c
+        // Get user input a,b,c,d 
+        // let userInput = []
+        // for (let i = 0; i < 4; i++) {
+        //     let a = Number(prompt("Enter a number"))
+        //     if (a) {
+        //         userInput.push(a)
+        //     } else {
+        //         console.log("Something wrong")
+        //         break
+        //     }
+        // }
+        // let max = userInput[0] / userInput[2] - userInput[1] / userInput[3]
+
+        // // Calculate max
+        // let i = 0
+        // let rotateTable = 0
+        // while (i < 3) {
+        //     let sub = userInput[0] / userInput[2] - userInput[1] / userInput[3]
+        //     if (sub > max) {
+        //         max = sub
+        //         rotateTable++
+        //     }
+
+        //     userInput.push(userInput[0])
+        //     userInput.shift(userInput[0])
+        //     i++
+        // }
+        // console.log(rotateTable)
+
+        // Bài 3
+        // let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]   
+
+        // console.log(arr)
+        
+        // function formatNumber(fm1,fm2,fm3) {
+        //     let domainName = arr.slice(0,fm1)
+        //     let number3 = arr.slice(fm1,fm1 + fm2)
+        //     let number4 = arr.slice(fm1 + fm2,fm1 + fm2 + fm3)
+
+        //     return `(${domainName.join("")}) ${number3.join("")}-${number4.join("")}`
+        // }
+        // // input khác nhau -> Đi qua hàm (quá trình xử lí) -> output 
+
+        // console.log(formatNumber(2,3,3))
+
+        // localStorage.info = JSON.stringify({
+        //     name:"Long",
+        //     age:26
+        // }) 
+
+        // let data = JSON.parse(localStorage.info)
+        // data.name = "Nghĩa"
+        // console.log(data)
+
+        // localStorage.info = JSON.stringify(data)
+
+        let arr = [1,2,3]
+        let obj = {"name": 'Long',"age":26}
+
+      // Đây là 1 callback () => 
+    //    let result1 = arr.forEach((value,index) => value % 2 == 0)
+       
+    //    let result2 = arr.filter((value,index) => value % 2 == 0)
+
+    //    console.log(result1,result2)
+       
+
+
+        // // regular function 
+        // function functionName(params) {
+        //         // Khác nhau `this`
+        // }
+
+        // // arrow function 
+        // const functionName = (params) => {
+
+        // }
+
+        // anonymous function
+
+
+
+    </script>
+</body>
+
+</html>

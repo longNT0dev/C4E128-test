@@ -1,9 +1,12 @@
 git/github 
-    git add. 
-    <!-- git init  -->
+    // Khi thay đổi code trên máy thì chạy 3 câu lệnh để đưa code lên github 
+    git add.
     git commit -m "message"
-    git push origin master
+    git push 
+
+    // Lấy code từ trên github về máy 
     git pull 
+    // Tạo folder .git và xác định các nội dung đưa lên github -> thường chỉ làm 1 lần đầu tiên 
     git clone  
 js
     let/const/var + tên biến    =      Giá trị của biến

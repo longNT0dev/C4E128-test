@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+    
+    <form id="form">
+        <input type="text" name="username">
+        <input type="password" name="password">
+        <button type="submit"></button>
+    </form>
+
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="">
+
+    <script>
+        let form = document.getElementById("form");
+
+        if(!localStorage.user)  {
+            localStorage.user = JSON.stringify([])
+        }
+        // Signup 
+        // form.addEventListener("submit", (e) => {
+        //     e.preventDefault()
+        //         let localUser = JSON.parse(localStorage.user)
+        //         localUser.push({username: e.target.username.value, password: e.target.password.value})
+        //         localStorage.user = JSON.stringify(localUser)
+        // })
+
+        // Cách 1: Đặt id cho 2 thẻ input + getElementById để lấy ra giá trị 
+
+        // Cách 2: 
+       
+        // Login 
+        form.addEventListener("submit", (e) => {
+            e.preventDefault()
+            
+            let users = JSON.parse(localStorage.user)
+
+            let isExist = false
+            for(let user of users) {
+                if(user.username === e.target.username.value && user.password === e.target.password.value) {
+                   isExist = true
+                }
+            }
+
+            if(isExist) {
+                console.log("Login success")
+            }else {
+                console.log("Wrong username or password")
+            }
+
+            
+        })
+
+
+
+        // let container = document.getElementById("container");
+
+
+        // function NavBar(user) {
+        //         return `
+        //         <nav>
+        //             <ul>
+        //                 <li>1</li>
+        //                 <li>2</li>
+        //                 <li>3</li>
+        //                 <li>4</li>
+        //                 ${user ? `<li>${user.name}</li>` : `<button>Đăng kí</button>` }
+        //             </ul>    
+        //         </nav>
+        //     `
+        // }
+
+
+        // container.onChange = () => {
+        //     // TODO 1 
+        // }
+
+        // container.onChange = () => {
+        //     // TODO 2 
+        // }
+        // // ->Ghi đè: Chỉ thực hiện TODO 2 
+
+        // container.addEventListener("change",() => {
+        //     // TODO 1 
+        // })
+        
+        // container.addEventListener("change",() => {
+        //     // TODO 2 
+        // })
+        // // -> Chạy cả 2 
+        // container.innerHTML = NavBar({name:'Long'})
+
+
+
+        // let obj = {
+        //     username: 'Long',
+        //     liveAt: 'NĐ'
+        // }
+
+
+        // let { username: user, liveAt } = obj 
+
+        // console.log(user,liveAt)
+
+        
+
+
+    </script>
+</body>
+
+</html>
